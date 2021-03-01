@@ -1,0 +1,406 @@
+.w3-container:after,.w3-container:before,.w3-panel:after,.w3-panel:before,.w3-row:after,.w3-row:before,.w3-row-padding:after,.w3-row-padding:before,
+.w3-container,.w3-panel{padding:0.01em 16px}.w3-panel{margin-top:16px;margin-bottom:16px}
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column1 {
+  float: left;
+  width: 50%;
+  padding: 10px;
+ 
+}
+
+.column2 {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  
+}
+
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.col
+{
+	flex-basis: 20%;
+	min-width: 250px;
+	min-height: 20px;
+}
+
+.small-img-row
+{
+	display: flex;
+	background:#aa12c9;
+	color: #fff;
+	margin: 20px ;
+	align-items: center;
+	border-radius: 6px;
+	overflow: hidden;
+	width: 80%;
+	height: 7%;
+}
+
+
+.small-img-row:hover{
+	box-shadow:0 2px 5px #EC97FF;
+	text-decoration:underline;
+}
+
+
+
+.Frame
+ {
+  width: auto;
+  padding: 5px;
+  border: 3px solid #2D283E;
+  margin: 0;
+  background-color:#2D283E;
+}
+
+.Frame:hover{
+	box-shadow:0 2px 7px #5F0374;
+	
+}
+
+
+.duration{
+	background-color: rgba(0, 0, 0, 0.4);
+	border-radius: 2px;
+	color: #fff;
+	font-size: 11px;
+	font-weight: bold;
+	left: 38px;
+	line-height: 13px;
+	padding: 2px 3px 1px;
+	position: absolute;
+	top: 5px;
+    transition:all 500ms ease;
+}
+
+
+.checked {
+  color: orange;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 20%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #aa12c9;
+  color: white;
+}
+
+.modal-body {padding: 2px 16px;
+color:#000;}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #aa12c9;
+  color: white;
+}
+
+
+
+
+
+ /* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+  background-color: #aa12c9;
+  color: white;
+  padding: auto;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: relative;
+  width: auto;
+  bottom: 30px;
+ 
+}
+
+
+
+
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: black;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 25%;
+  font-size: 18px;
+}
+
+
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+
+
+
+-----------------------------
+
+
+body::-webkit-scrollbar-button{
+  background:rgb(59, 6, 90);
+}
+
+body::-webkit-scrollbar-button:hover{
+  background:#aa12c9;
+  border-radius: 5px;  
+}
+
+body::-webkit-scrollbar{
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track{
+  background:rgb(59, 6, 90);
+}
+
+body::-webkit-scrollbar-thumb{
+  border-radius: 5px;
+  box-shadow: inset 0 0 6px rgb(59, 6, 90); 
+  background: linear-gradient(#aa12c9,rgb(190, 74, 236));
+}
+
+body::-webkit-scrollbar-thumb:hover{
+  background: linear-gradient(rgb(190, 74, 236),#aa12c9);
+}
+  
+/* Style the navbar */
+#navbar {
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  height: 50px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  background-color:rgb(59, 6, 90);
+}
+  
+  /* Navbar links */
+.logo{
+  position: left;
+  opacity: 90%;
+  top: -30px;
+  left: -15px;
+  
+}
+
+
+.navlinks{
+  position: static;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5px;
+}
+
+
+
+
+.navlinks li{
+  list-style: none;
+}
+
+#navbar a {
+  display: flex;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: x-large;
+  font-family: consolas;
+  text-transform: uppercase;
+}
+
+
+
+ 
+  /* Style the active class (and buttons on mouse-over) */
+.active, .btn:hover {
+  background-color:#aa12c9;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+} 
+  
+  /* Page content */
+.content {
+  padding: 30px;
+}
+  
+ 
+  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+ .content {
+  padding-top: 60px;
+}
+
+.faq{
+  margin-left: 30%;
+}
+
+label #btnNav,
+label #cancel{
+  position: fixed;
+  color: white;
+  font-size: 30px;
+  right:2%;
+  top: 2%;
+  cursor: pointer;
+  display: none;
+
+}
+
+#check{
+  display: none;
+}
+
+
+
+@media screen and (max-width:1366px){
+  
+  
+}
+@media screen and (max-width:800px){
+  .logo{
+    float: left;
+  }
+  .navlinks{
+    position: absolute;
+    right: 0px;
+  }
+
+  .faq{
+    margin-left: 0;
+  }
+}
+@media screen and (max-width:619px){
+  /* body{
+    display: none;
+  } */
+
+label #btnNav{
+  display: block;
+}
+
+.logo{
+  position: relative;
+  top: -90px;
+}
+
+
+.navlinks{
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  top: 8vh;
+  background-color: rgb(59, 6, 90);
+  align-items: center;
+  width: 50%;
+  height: 92vh;
+  transform: translateX(100%);
+  transition: transform 0.5s ease-in;
+}
+
+#check:checked ~ ul{
+  transform: translateX(0%);
+}
+
+#check:checked ~ label #btnNav{
+  display: none;
+}
+
+#check:checked ~ label #cancel{
+  display: block;
+}
+
+}

@@ -1,0 +1,527 @@
+<html>
+<head>
+<title>Streaming Page</title> 
+
+
+<!--Bootstap Files-->
+<link rel = "stylesheet" type = "text/css" href = "bootstrap.min.css">
+
+
+<!--Link to Css File-->
+<link rel="stylesheet" href="streaming_Page.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+
+
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
+	 <script src="https://kit.fontawesome.com/2ca75661ea.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="nav.css">
+  <link rel="stylesheet" href="button.css">
+  <link rel="stylesheet" href="cards.css">
+
+
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+
+</head>
+
+
+<body style="background-color:#D1D7E0;">
+
+
+
+
+
+<div id="navbar"> 
+    <input type="checkbox" id="check">
+    <label for="check">
+      <i class="fas fa-bars" id="btnNav"></i>
+      <i class="fas fa-times" id="cancel"></i>
+    </label>
+    <div class="logo">
+        <a href="#home">   
+            <input id="logo" type="image" src="logo.png" alt="Home">
+          </a>
+     
+    </div>
+    <ul class="navlinks">
+        <li>
+           <a class="btn active" href="#watch">Watch</a>
+        </li>
+        <li class="add">
+           <a class="btn" href="#add"><i class="fas fa-plus"></i></a>
+        </li>
+        <li class="faq">
+           <a class="btn" href="#faq">F.A.Q.</a>
+        </li>
+        <li>
+           <a class="btn" href="#about">About</a>
+        </li>
+        <li>
+           <a class="btn" href="#contact"><i class="fas fa-phone-square-alt"></i></a>
+        </li>
+        <li class="calendar">
+           <a class="btn" href="#calendar"><i class="far fa-calendar-alt"></i></a>
+        </li>
+     </ul>
+  </div>
+
+<div class="w3-container"> 
+
+<br><br>
+
+
+<!--Layouts-->
+<div class="row">
+
+	<!--Column Layout 1-->
+  <div class="column" style="background-color:#D1D7E0;"> 
+
+ 
+
+<!--Channel Frame-->
+<div class = "channel">  
+	<img src="images/TRT.jpg" alt="Trulli" width="50" height="50">
+	<b>	Watch TRT 4 Çocuk (Turkish) Live from<font color = "#B4290C" > <u>Turkey</u></font>.</b>
+ </div>
+ 
+
+       
+        
+		<!--Video Player-->
+        <div class="media-wrapper">
+            <video id="player1" width="641" height="360" controls preload="none">
+                <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/CastVideos/mp4/BigBuckBunny.mp4" type="video/mp4">
+            </video>
+        </div>
+		
+		
+
+<!--Button Grid (Like/Dislike/Share/Watch Later-->
+<div>
+
+
+<a class="open-button"><i onclick="myFunction(this)" class="fa fa-thumbs-up"></i><b>391K </b></a>
+
+
+<!--Share Popup-->
+<a class="open-button"><i onclick="openForm()" class="fa fa-share" style="font-size:14px;color:white"></i><b>SHARE </b></a>
+<div class="form-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h6>Share</h6>
+
+	<a href="#" class="fa fa-facebook"></a>
+	<a href="#" class="fa fa-twitter"></a>
+	<a href="#" class="fa fa-snapchat-ghost"></a>
+	<a href="#" class="fa fa-instagram"></a>
+	<a href="#" class="fa fa-foursquare"></a>
+	
+	<br>
+	<button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+<!--Add Watch Later-->
+<a class="open-button"><i onclick="openForm1()" class="fa fa-download" style="font-size:14px;color:white"></i><b>SAVE </b></a>
+<div class="form-popup" id="myForm1">
+  <form action="/action_page1.php" class="form-container">
+    <h6>Save to</h6>
+	
+	<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+  <label for="vehicle1">Watch later list</label>
+	
+	<br>
+	<button type="button" class="btn cancel" onclick="closeForm1()">Close</button>
+  </form>
+</div>
+
+
+<!--Report-->
+<a class="open-button" onclick="myFunction1()"><i class="fa fa-flag" style="font-size:14px;color:white"></i><b>Report </b></a>
+
+
+
+
+
+
+
+</div> <br>
+
+
+<!--Reminder Frame-->
+<div class = "reminder"> 
+
+		<i class="fa fa-calendar-check-o" style="font-size:20px"></i> 
+		<b>Reminder</b> <i class="fa fa-calendar-check-o" style="font-size:20px"></i>
+		
+		<hr>
+	
+	<!--Date-->
+	<form action="/action_page.php">
+  <label for="date">Date:</label>
+  <input type="date" id="date" name="date" height="100px">
+</form>
+
+
+<!--Time-->
+
+<form action="/action_page.php">
+
+  <label for="appt">Time:</label>
+  <input type="time" id="appt" name="appt" height="150px">
+</form>
+
+
+<!--Reminder Buttons-->
+<button class="button"><b>Add</b></button>
+<button class="button"><b>Edit</b></button>
+<button class="button"><b>Remove</b></button>
+
+ </div>
+ 
+ 
+ <br>
+ 
+ <!--Comment Frame-->
+ <div class = "commentFrame"> 
+
+<br>
+
+<b>103 Comments</b>
+<i class="fa fa-comments" style="font-size:25px;color:black"></i>
+
+Sort by
+  <select name="comment" id="comments">
+    <option value="top">Top</option>
+    <option value="newest">Newest</option>
+    <option value="old">Old</option>
+  </select>
+
+
+ <!--horizontal rule-->
+ <hr>
+
+<br>
+
+<!--Comment Box-->
+<textarea name="comment"class="comment" style="color:#908B90;">Write a Comment...
+</textarea>
+
+<br>
+
+<!--Comment Buttons-->
+<button class="button"><b>Cancel</b></button>
+<button class="button"><b>Post</b></button>
+ 
+ <br><br>
+ 
+ 
+ <!--horizontal rule-->
+ <hr>
+ 
+ <br>
+ 
+ 
+ <!--Comments & Profile Images-->
+<img src="images/women.jpg" alt="Trulli" width="50" height="50"> I love this cartoon
+<br><br>
+ <img src="images/women2.jpg" alt="Trulli" width="50" height="50"> He's always skipping bits it's getting on my nerves!😩
+ <br><br>
+ <img src="images/man.jpg" alt="Trulli" width="50" height="50"> Super 👌👍
+<br><br>
+  <img src="images/girl.jpg" alt="Trulli" width="50" height="50"> My Favorite channel ever 😘😭
+<br><br>
+ 
+ <!--View more-->
+ <p align="center" style="color:#908B90;">View more</p>  <br>
+ 
+ </div>
+
+ </div> <!--Column Layout 1 End-->
+
+
+
+	<!--Column Layout 2-->
+	<div class="column" style="background-color:#D1D7E0;"> 
+	
+	<!--Up Next Frame-->
+	 <div class = "Frame"> 
+		
+		<!--Up Next Hyper Link-->
+		<a href="#"><h5>Up Next</h5></a> 
+		
+		
+		<!--Up Next Videos-->
+		<div class ="col">
+	<div class="small-img-row">
+	<div class="small-img">
+		<img src="images/spider.gif" width="130px" height="78px">
+	</div>
+	<p style="color:white;" >Spider-Man is a fictional superhero created by ...</p>
+	</div>
+		</div>
+		
+		
+		<div class ="col">
+	<div class="small-img-row">
+	<div class="small-img">
+		<img src="images/harry.gif" width="130px" height="78px">
+	</div>
+	<p style="color:white;">Harry Potter is a series of seven fantasy novels ...</p>
+	</div>
+		</div>
+		
+		
+		<div class ="col">
+	<div class="small-img-row">
+	<div class="small-img">
+		<img src="images/lord.gif" width="130px" height="78px">
+	</div>
+	<p style="color:white;">The Lord of the Rings movies are now streaming</p>
+	</div>
+		</div>
+
+</div>
+
+<br>
+
+
+	<!--Watch Later Frame-->
+	 <div class = "Frame"> 
+		
+		<!--Watch Later Hyper Link-->
+		<a href="watch_Later.html" target="_blank"><h5>Watch Later</h5></a> 
+		
+		
+		<!--Watch Latert Videos-->
+		<div class ="col">
+	<div class="small-img-row">
+	<div class="small-img">
+		<img src="images/jb.gif" width="130px" height="78px">
+	</div>
+	<p style="color:white;" >Justin Drew Bieber is a Canadian singer</p>
+	</div>
+		</div>
+		
+		
+		<div class ="col">
+	<div class="small-img-row">
+	<div class="small-img">
+		<img src="images/got.gif" width="130px" height="78px">
+	</div>
+	<p style="color:white;">Queen Daenerys I Targaryen is the younger ..</p>
+	</div>
+		</div>
+		
+		
+		<div class ="col">
+	<div class="small-img-row">
+	<div class="small-img">
+		<img src="images/husky.gif" width="130px" height="78px">
+	</div>
+	<p style="color:white;">A husky is a sled dog used in the polar regions</p>
+	</div>
+		</div>
+
+</div>
+ 
+ <br>
+ 
+ <!--Liked Channels Frame-->
+	 <div class = "Frame"> 
+		
+		<!--Liked Channels Hyper Link-->
+		<a href="liked_channels.html" target="_blank"><h5>Liked Channels</h5></a> 
+		
+		
+		<!--Liked Channels-->
+		<div class ="col">
+	<div class="small-img-row">
+	<div class="small-img">
+		<img src="images/st.gif" width="130px" height="78px">
+	</div>
+	<p style="color:white;" >Stranger Things is an American science fiction</p>
+	</div>
+		</div>
+		
+		
+		<div class ="col">
+	<div class="small-img-row">
+	<div class="small-img">
+		<img src="images/gp.gif" width="130px" height="78px">
+	</div>
+	<p style="color:white;">The guinea pig or domestic guinea pig,</p>
+	</div>
+		</div>
+		
+		
+		<div class ="col">
+	<div class="small-img-row">
+	<div class="small-img">
+		<img src="images/disney.gif" width="130px" height="78px">
+	</div>
+	<p style="color:white;">The German fairy tale "Rapunzel" in the...</p>
+	</div>
+		</div>
+
+</div>
+
+
+<br> 
+
+
+ 
+ <!--Vote Table-->
+
+		<div class="columns">
+  <ul class="price">
+    <li class="header" style="background-color:#564F6F">Today</li>
+    <li class="grey">Pakistan: Ary(UR)</li>
+    <li>Qatar: Al Jazeera (AR)</li>
+    <li>Qatar: Al Jazeera (EN)</li>
+    <li>Pakistan: Samaa TV (UR)</li>
+    <li>Sri Lanka: Derana (SI)</li>
+
+  </ul>
+</div>
+
+<div class="columns">
+  <ul class="price">
+    <li class="header" style="background-color:#564F6F">This Month</li>
+    <li>Iran: Press TV (EN)</li>
+    <li>China: CGTN Arabic (AR)</li>
+    <li>Venezuela: Telesur TV (EN)</li>
+    <li>Syria: Sama TV (AR)</li>
+    <li>Qatar: Al Jazeera (AR)</li>
+
+  </ul>
+</div>
+
+<div class="columns">
+  <ul class="price">
+    <li class="header" style="background-color:#564F6F">Real Time</li>
+    <li>Un.Kingdom:(UR)</li>
+    <li>Sri Lanka: Derana (SI)</li>
+    <li>Qatar: Al Jazeera (EN)</li>
+    <li>Iran: Press TV (EN)</li>
+    <li>Syria: Sama TV (AR)</li>
+
+  </ul> 
+</div>  
+ <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+ 
+ 
+  <div class = "webFrame"> 
+ 
+ <img src="images/TRT.jpg" width="50px" height="50px">
+ TRT 4 Çocuk : <a href="http://www.trt.net.tr/Anasayfa/Anasayfa.aspx">Website- </a> 
+  <a href="https://www.youtube.com/user/TRTCOCUKKANALI/videos">Video Channel</a> 
+ 
+ </div> <br>
+ 
+ 
+ 
+
+ </div> <!--Column Layout 2 End-->
+	
+	
+	
+	</div>
+	
+	
+	
+  
+
+</div>
+
+
+
+<section style="width: 100%;height: 0vh;">
+        <div style="width: 100%;height: 0vh;"></div>
+    </section>
+    <footer id="background">
+        <div class="container">
+            <div class="row">
+                <div class="col" id="col-1">
+                    <div class="row image">
+                        <div class="col text-left align-self-center" style="background-position: left;padding: 5;margin: 5;"><img class="img-fluid align-items-center align-self-center order-3 logo" src="assets/img/logo.png"></div>
+                    </div>
+                    <div class="row row-cols-1 heading_links_1">
+                        <div class="col" id="col">
+                            <h1>Reasources</h1>
+                            <ul class="list-1">
+                                <li><a href="#" style="color: rgb(5,6,6);opacity: 1;">Watch</a></li>
+                                <li><a href="#" style="color: rgb(5,6,6);opacity: 1;">Add+</a></li>
+                                <li><a href="#" style="color: rgb(5,6,6);opacity: 1;">FAQ<br></a></li>
+                                <li><a href="#" style="color: rgb(5,6,6);opacity: 1;">Feedback</a></li>
+                                <li><a href="#" style="color: rgb(5,6,6);opacity: 1;">Rating</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col" id="col-2">
+                    <div class="row">
+                        <div class="col"><img class="logo_invisible" src="assets/img/logo.png"></div>
+                        <div class="col d-flex flex-column">
+                            <h1>Products</h1>
+                            <ul>
+                                <li><a href="#" style="color: rgb(5,6,6);opacity: 1;">Privacy Policy</a></li>
+                                <li><a href="#" style="color: rgb(5,6,6);opacity: 1;">Copyright</a></li>
+                                <li><a href="#" style="color: rgb(5,6,6);opacity: 1;">Cookies</a></li>
+                                <li><a href="#" style="color: rgb(5,6,6);opacity: 1;">About</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col" id="col-3">
+                    <div class="row">
+                        <div class="col">
+                            <h1>Any Doubt?</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <form>
+                                <div class="form-group"><input class="form-control" type="text" name="name" placeholder="Name" required="" minlength="1"></div>
+                                <div class="form-group"><input class="form-control" type="number" name="Phone (not mandatory)" min="10" max="10" required="" placeholder="Phone (not mandatory)"></div>
+                                <div class="form-group"><textarea class="form-control" name="message" placeholder="Message" rows="2" required="" minlength="2"></textarea></div>
+                                <div class="form-group"><button class="btn btn-primary send" id="send" type="button" style="font-size: 18px;">submit</button></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col" id="col-4">
+                    <div class="row">
+                        <div class="col">
+                            <h1 style="color: rgba(33,37,41,0);opacity: 0;">Any Doubt?</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <form>
+                                <div class="form-group"><input class="form-control is-invalid" type="email" name="email" placeholder="Email"></div>
+                                <div class="form-group"><input class="form-control" type="text" name="info@wwitv.com" placeholder="info@wwitv.com" required="" pattern="0-9" maxlength="10" minlength="10" readonly="" disabled=""></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="copyright">Copyright © 1998-2019</p>
+        </div>
+    </footer>
+
+
+
+<script src="streaming_Page.js"></script>
+ <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>

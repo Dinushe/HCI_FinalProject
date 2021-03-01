@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>TV Channels</title>
+  <script src="https://kit.fontawesome.com/2ca75661ea.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="nav.css">
+  <link rel="stylesheet" href="cards.css">
+</head>
+<body>
+<!--===================================================  navbar starts hear   =============================-->
+
+  <div id="navbar"> 
+    <input type="checkbox" id="check">
+    <label for="check">
+      <i class="fas fa-bars" id="btnNav"></i>
+      <i class="fas fa-times" id="cancel"></i>
+    </label>
+    <div class="logo">
+     <a href="../../home.html">   
+       <input id="logo" type="image" src="logo.png" alt="Home">
+     </a>
+    </div>
+    <ul class="navlinks">
+        <li>
+           <a class="btn active" href="TVchannelMain.html">Watch</a>
+        </li>
+        <li class="add">
+           <a class="btn" href="form.HTML"><i class="fas fa-plus"></i></a>
+        </li>
+        <li class="faq">
+           <a class="btn" href="../../IT18041880/Malindu,FAQ,Rate,Suggestion/faq.html">F.A.Q.</a>
+        </li>
+        <li>
+           <a class="btn" href="../../copyright.html">About</a>
+        </li>
+        <li>
+           <a class="btn" href="../../home.html"><i class="fas fa-phone-square-alt"></i></a>
+        </li>
+        <li class="calendar">
+           <a class="btn" href="../../IT18160062/malki/watch_Later.html"><i class="far fa-calendar-alt"></i></a>
+        </li>
+     </ul>
+  </div>
+<!--===================================================  navbar ends hear   =============================-->
+
+
+<!--===================================================  cardview starts hear   =============================-->
+<div class="mine">
+    <div class="tv">
+        <div class="tv-head">
+            Most Viewed TV Channels
+        </div>
+        <div class="online">
+            Online Users: 123
+        </div>
+    <div class="card-container">
+    <div class="card" onclick="stream()">
+        <div class="imgBox">
+            <img src="tree.jpg">
+        </div>
+        <div class="details">
+            <h2>details</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, 
+                quibusdam quisquam dolores quasi sunt quos, exercitationem reprehenderit, 
+                tenetur maxime quod cupiditate nostrum. Corrupti sed neque at exercitationem
+                 eveniet vel velit?</p>
+        </div>
+    </div>
+    <div class="card" onclick="stream()">
+        <div class="imgBox">
+            <img src="wall.jpg">
+        </div>
+        <div class="details">
+            <h2>details</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, 
+                quibusdam quisquam dolores quasi sunt quos, exercitationem reprehenderit, 
+                tenetur maxime quod cupiditate nostrum. Corrupti sed neque at exercitationem
+                 eveniet vel velit?</p>
+        </div>
+    </div>
+    <div class="card" onclick="stream()">
+        <div class="imgBox">
+            <img src="leaves.jpg">
+        </div>
+        <div class="details">
+            <h2>details</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, 
+                quibusdam quisquam dolores quasi sunt quos, exercitationem reprehenderit, 
+                tenetur maxime quod cupiditate nostrum. Corrupti sed neque at exercitationem
+                 eveniet vel velit?</p>
+        </div>
+    </div>
+</div>
+</div>
+<div class="web">
+    <div class="web-head">
+        Most Viewed Streaming Channels
+    </div>
+    <div class="online">
+        Online Users: 564
+    </div>
+    <div class="card-container">
+    <div class="card" onclick="stream()">
+        <div class="imgBox">
+            <img src="leaves.jpg">
+        </div>
+        <div class="details">
+            <h2>details</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, 
+                quibusdam quisquam dolores quasi sunt quos, exercitationem reprehenderit, 
+                tenetur maxime quod cupiditate nostrum. Corrupti sed neque at exercitationem
+                 eveniet vel velit?</p>
+        </div>
+    </div>
+    <div class="card" onclick="stream()">
+        <div class="imgBox">
+            <img src="tree.jpg">
+        </div>
+        <div class="details">
+            <h2>details</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, 
+                quibusdam quisquam dolores quasi sunt quos, exercitationem reprehenderit, 
+                tenetur maxime quod cupiditate nostrum. Corrupti sed neque at exercitationem
+                 eveniet vel velit?</p>
+        </div>
+    </div>
+    <div class="card" onclick="stream()">
+        <div class="imgBox">
+            <img src="wall.jpg">
+        </div>
+        <div class="details">
+            <h2>details</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, 
+                quibusdam quisquam dolores quasi sunt quos, exercitationem reprehenderit, 
+                tenetur maxime quod cupiditate nostrum. Corrupti sed neque at exercitationem
+                 eveniet vel velit?</p>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+<!--===================================================  cardview ends hear   =============================-->
+
+
+<!--===================================================  categories starts hear   =============================-->
+
+
+
+<div class="category">
+    <div class="head">
+        Category
+    </div>
+    <div class="tabs">
+        <button class="tv" onclick="myFunction1()"><i class="fas fa-tv"></i>TV Channels</button>
+        <button class="web" onclick="myFunction()"><i class="fas fa-camera"></i>Webcams</button>
+    </div>
+    <div class="catCont">
+        <div class="contnt">
+            <div class="searchCon">
+                <input type="text" class="search" placeholder="Type here...">
+                <img src="search-solid.svg">
+            </div>
+            
+            <table class="table1" >
+                <tr>
+                    <td><div class="con">Cartoon
+                        <div class="imgBoxCon">
+                            <img src="nature.jpg">
+                        </div>
+                    </div></td>
+                    <td><div class="con">Sports<div class="imgBoxCon">
+                            <img src="nature.jpg">
+                        </div></div></td>
+                </tr>
+                <tr>
+                    <td><div class="con">News<div class="imgBoxCon">
+                            <img src="nature.jpg">
+                        </div></div></td>
+                    <td><div class="con">Religious<div class="imgBoxCon">
+                            <img src="nature.jpg">
+                        </div></div></td>
+                </tr>
+                <tr>
+                    <td><div class="con">Geogrophy<div class="imgBoxCon">
+                            <img src="nature.jpg">
+                        </div></div></td>
+                    <td><div class="con">Education<div class="imgBoxCon">
+                            <img src="nature.jpg">
+                        </div></div></td>
+                </tr>
+                <tr>
+                    <td><div class="con">History<div class="imgBoxCon">
+                            <img src="nature.jpg">
+                        </div></div></td>
+                    <td><div class="con">Other<div class="imgBoxCon">
+                            <img src="nature.jpg">
+                        </div></div></td>
+                </tr>
+            </table>
+        </div>
+        <div class="region">
+            <h2>Regions</h2>
+        <table class="table">
+            <tr>
+                <td><div class="regions">Africa</div></td>
+                <td><div class="regions">Asia</div></td>
+            </tr>
+            <tr>
+                <td><div class="regions">The Caribbean</div></td>
+                <td><div class="regions">Central America</div></td>
+            </tr>
+            <tr>
+                <td><div class="regions">Europe</div></td>
+                <td><div class="regions">North America</div></td>
+            </tr>
+            <tr>
+                <td><div class="regions">Oceania</div></td>
+                <td><div class="regions">South America</div></td>
+            </tr>
+        </table>
+        </div>
+    </div>
+</div>
+
+
+
+<!--===================================================  categories ends hear   =============================-->
+
+  <script src="nav.js"></script>
+</body>
+</html>

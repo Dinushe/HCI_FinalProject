@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Admin</title>
+    <script src="https://kit.fontawesome.com/2ca75661ea.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="admin.css">
+    <link rel="stylesheet" href="nav.css">
+</head>
+
+<body>
+
+    <div id="navbar"> 
+        <input type="checkbox" id="check">
+        <label for="check">
+          <i class="fas fa-bars" id="btnNav"></i>
+          <i class="fas fa-times" id="cancel"></i>
+        </label>
+        <div class="logo">
+         <a href="../../home.html">   
+           <input id="logo" type="image" src="logo.png" alt="Home">
+         </a>
+        </div>
+        <ul class="navlinks">
+            <li>
+               <a class="btn" href="TVchannelMain.html">Watch</a>
+            </li>
+            <li class="add">
+               <a class="btn active" href="form.HTML"><i class="fas fa-plus"></i></a>
+            </li>
+            <li class="faq">
+               <a class="btn" href="../../IT18041880/Malindu,FAQ,Rate,Suggestion/faq.html">F.A.Q.</a>
+            </li>
+            <li>
+               <a class="btn" href="../../copyright.html">About</a>
+            </li>
+            <li>
+               <a class="btn" href="../../home.html"><i class="fas fa-phone-square-alt"></i></a>
+            </li>
+            <li class="calendar">
+               <a class="btn" href="../../IT18160062/malki/watch_Later.html"><i class="far fa-calendar-alt"></i></a>
+            </li>
+         </ul>
+      </div>
+    <!--===================================================  navbar ends hear   =============================-->
+
+    <div class="mainBg">
+        <div class="btn-box">
+            <button onclick="myFunction1()"><i class="fas fa-tv" onclick=""></i>TV channels</button>
+            <button onclick="myFunction()"><i class="fas fa-camera"></i>Streaming channels</button>
+        </div>
+        <section class="requests">
+            <div class="head">
+                <h1>Request Forms</h1>
+                <select class="sort" id="channelSort">
+                    <option value="0">Sort :</option>
+                    <option value="1">By date</option>
+                    <option value="2">By time</option>
+                    <option value="3">By ID</option>
+                </select>
+            </div>
+            <table class="table">
+                            <thead>
+                                <tr id="borders">
+                                    <th id="borders">Title</th>
+                                    <th id="borders">Client ID</th>
+                                    <th id="borders">Counting</th>
+                                    <th id="borders">Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="1_row">
+                                    <td id="borders">
+                                        <p>Title_1</p>
+                                    </td>
+                                    <td id="borders">
+                                        <p>Client ID_1</p>
+                                    </td>
+                                    <td id="borders">
+                                        <p>Counting&nbsp;_1</p>
+                                    </td>
+                                    <td id="borders" style="padding-right: 5px;">
+                                        <div class="form-check text-left padding" style="padding-left: 55px;"><input class="form-check-input" type="radio" id="formCheck-1"><label class="form-check-label" for="formCheck-1">Update</label></div>
+                                        <div class="form-check padding" id="padding" style="padding-left: 55px;"><input class="form-check-input" type="radio" id="formCheck-1"><label class="form-check-label" for="formCheck-1">Delete</label></div>
+                                    </td>
+                                </tr>
+                                <tr id="borders" class="2_row">
+                                    <td id="borders">
+                                        <p>Title_2<br></p>
+                                    </td>
+                                    <td id="borders">
+                                        <p>Client ID_2</p>
+                                    </td>
+                                    <td id="borders">
+                                        <p>Counting&nbsp;_2<br></p>
+                                    </td>
+                                    <td id="borders">
+                                        <div class="form-check" style="padding-left: 55px;"><input class="form-check-input" type="radio" id="formCheck-1"><label class="form-check-label" for="formCheck-1">Update</label></div>
+                                        <div class="form-check" style="padding-left: 55px;"><input class="form-check-input" type="radio" id="formCheck-1"><label class="form-check-label" for="formCheck-1">Delete</label></div>
+                                    </td>
+                                </tr>
+                                <tr id="borders" class="3_row">
+                                    <td id="borders">
+                                        <p>Title_3<br></p>
+                                    </td>
+                                    <td id="borders">
+                                        <p>Client ID_3</p>
+                                    </td>
+                                    <td id="borders">
+                                        <p>Counting&nbsp;_3<br></p>
+                                    </td>
+                                    <td id="borders">
+                                        <div class="form-check" style="padding-left: 55px;"><input class="form-check-input" type="radio" id="formCheck-1"><label class="form-check-label" for="formCheck-1">Update</label></div>
+                                        <div class="form-check" style="padding-left: 55px;"><input class="form-check-input" type="radio" id="formCheck-1"><label class="form-check-label" for="formCheck-1">Delete</label></div>
+                                    </td>
+                                </tr>
+                                <tr id="borders" class="4_row">
+                                    <td id="borders">
+                                        <p>Title_4</p>
+                                    </td>
+                                    <td id="borders">
+                                        <p>Client ID_4</p>
+                                    </td>
+                                    <td id="borders">
+                                        <p>Counting&nbsp;_4<br></p>
+                                    </td>
+                                    <td id="borders">
+                                        <div class="form-check" style="padding-left: 55px;"><input class="form-check-input" type="radio" id="formCheck-1"><label class="form-check-label" for="formCheck-1">Update</label></div>
+                                        <div class="form-check" style="padding-left: 55px;"><input class="form-check-input" type="radio" id="formCheck-1"><label class="form-check-label" for="formCheck-1">Delete</label></div>
+                                    </td>
+                                </tr>
+                                <tr id="borders" class="5_row">
+                                    <td id="borders">
+                                        <p>Title_5</p>
+                                    </td>
+                                    <td id="borders">
+                                        <p>Client ID_5</p>
+                                    </td>
+                                    <td id="borders">
+                                        <p>Counting&nbsp;_5<br></p>
+                                    </td>
+                                    <td id="borders">
+                                        <div class="form-check" style="padding-left: 55px;"><input class="form-check-input" type="radio" id="formCheck-1"><label class="form-check-label" for="formCheck-1">Update</label></div>
+                                        <div class="form-check" style="padding-left: 55px;"><input class="form-check-input" type="radio" id="formCheck-1"><label class="form-check-label" for="formCheck-1">Delete</label></div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+    </section>
+    <div class="searchCon">
+        <img src="search-solid.svg">
+        <input type="text" class="search" placeholder="Type here...">                
+    </div>
+    <section class="channels">
+        <div class="head">
+            <h1>TV Channels</h1>
+            <div class="select">
+            <select class="sort" id="channelSort">
+                <option value="0">Sort :</option>
+                <option value="1">By date</option>
+                <option value="2">By time</option>
+                <option value="3">By ID</option>
+            </select>
+            </div> 
+        </div>
+        
+        
+                        <table class="table">
+                            <thead>
+                                <tr id="borders">
+                                    <th id="borders">Channel NO.</th>
+                                    <th id="borders">Title</th>
+                                    <th id="borders">Region</th>
+                                    <th id="borders">Country</th>
+                                    <th id="borders">ClientID</th>
+                                    <th id="borders">Delete</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr id="borders" class="1_row">
+                                    <td id="borders">
+                                        <p>Channel NO.1<br></p>
+                                    </td>
+                                    <td id="borders">Title_1<br></td>
+                                    <td id="borders">
+                                        <p>Asian</p>
+                                    </td>
+                                    <td id="borders">
+                                        <p>India</p>
+                                    </td>
+                                    <td id="borders">
+                                        <p>Client ID_1</p>
+                                    </td>
+                                    <td id="borders-1">
+                                        <div class="form-check"><input class="form-check-input" type="radio" id="formCheck-1"><label class="form-check-label" for="formCheck-1">Yes</label></div>
+                                        <div class="form-check"><input class="form-check-input" type="radio" id="formCheck-1"><label class="form-check-label" for="formCheck-1">No</label></div>
+                                    </td>
+                                </tr>
+                                <tr id="borders" class="2_row">
+                                    <td id="borders">
+                                        <p>Channel NO.2<br></p>
+                                    </td>
+                                    <td id="borders">Title_2<br></td>
+                                    <td id="borders">
+                                        <p>Africa<br></p>
+                                    </td>
+                                    <td id="borders">
+                                        <p>Africa</p>
+                                    </td>
+                                    <td id="borders">
+                                        <p>Client ID_2</p>
+                                    </td>
+                                    <td id="borders-2">
+                                        <div class="form-check"><input class="form-check-input" type="radio" id="formCheck-1"><label class="form-check-label" for="formCheck-1">Yes</label></div>
+                                        <div class="form-check"><input class="form-check-input" type="radio" id="formCheck-1"><label class="form-check-label" for="formCheck-1">No</label></div>
+                                    </td>
+                                </tr>
+                                <tr id="borders" class="3_row">
+                                    <td id="borders">
+                                        <p>Channel NO.3<br></p>
+                                    </td>
+                                    <td id="borders">Title_3<br></td>
+                                    <td id="borders">
+                                        <p>Central and Eastern Europe.<br></p>
+                                    </td>
+                                    <td id="borders">
+                                        <p>Poland</p>
+                                    </td>
+                                    <td id="borders">
+                                        <p>Client ID_3</p>
+                                    </td>
+                                    <td id="borders-3">
+                                        <div class="form-check"><input class="form-check-input" type="radio" id="formCheck-1"><label class="form-check-label" for="formCheck-1">Yes</label></div>
+                                        <div class="form-check"><input class="form-check-input" type="radio" id="formCheck-1"><label class="form-check-label" for="formCheck-1">No</label></div>
+                                    </td>
+                                </tr>
+                                <tr id="borders" class="4_row">
+                                    <td id="borders">
+                                        <p>Channel NO.4<br></p>
+                                    </td>
+                                    <td id="borders">Title_4<br></td>
+                                    <td id="borders">
+                                        <p>Mediterranean &amp; Middle East.<br></p>
+                                    </td>
+                                    <td id="borders">
+                                        <p>Jordan.<br></p>
+                                    </td>
+                                    <td id="borders">
+                                        <p>Client ID_4</p>
+                                    </td>
+                                    <td id="borders-4">
+                                        <div class="form-check"><input class="form-check-input" type="radio" id="formCheck-1"><label class="form-check-label" for="formCheck-1">Yes</label></div>
+                                        <div class="form-check"><input class="form-check-input" type="radio" id="formCheck-1"><label class="form-check-label" for="formCheck-1">No</label></div>
+                                    </td>
+                                </tr>
+                                <tr id="borders" class="5_row">
+                                    <td id="borders">
+                                        <p>Channel NO.5<br></p>
+                                    </td>
+                                    <td id="borders">Title_5<br></td>
+                                    <td id="borders">
+                                        <p>Americas.<br></p>
+                                    </td>
+                                    <td id="borders">
+                                        <p>America<br></p>
+                                    </td>
+                                    <td id="borders">
+                                        <p>Client ID_5</p>
+                                    </td>
+                                    <td id="borders-5">
+                                        <div class="form-check"><input class="form-check-input" type="radio" id="formCheck-1"><label class="form-check-label" for="formCheck-1">Yes</label></div>
+                                        <div class="form-check"><input class="form-check-input" type="radio" id="formCheck-1"><label class="form-check-label" for="formCheck-1">No</label></div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                   
+        </section>
+    </div>
+
+<!--===================================================  footer starts hear   =============================-->
+<script>
+    function myFunction() {
+    
+       
+      var myWindow = window.open("../../IT18019896/updated_cam/admin/index.html");
+        
+    }
+
+    function myFunction1() {
+    
+       
+    var myWindow = window.open("adminPanel.html");
+      
+  }
+</script>
+</body>
+
+</html>
